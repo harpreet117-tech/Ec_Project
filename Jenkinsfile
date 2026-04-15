@@ -30,7 +30,8 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 --name my-react-app-container my-react-app'
+                sh 'docker rm -f my-react-app-container || true'
+                sh 'docker run -d -p 3000:80 --name my-react-app-container my-react-app'
             }
         }
     }
