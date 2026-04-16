@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>Group 5</h1>
+      <h1>Group 6</h1>
       <p>Harpreet Singh</p>
     </div>
   );
